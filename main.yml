@@ -3,7 +3,7 @@
 - hosts: all
   vars:
     extension_directory: "{{ansible_env.HOME}}/burpExtensions"
-    jython_version: "2.7.0"
+    jython_version: '2.7.0'
     brew_deps:
       - 'ant'
       - 'phantomjs'
@@ -19,7 +19,7 @@
       - http://central.maven.org/maven2/org/apache/httpcomponents/httpclient-cache/4.3.6/httpclient-cache-4.3.6.jar
       - http://central.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.jar
       - http://central.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.6/httpmime-4.3.6.jar
-    co2_version: "1.1.11"
+    co2_version: '1.1.11'
 
   tasks:
     - name: Install brew dependencies
