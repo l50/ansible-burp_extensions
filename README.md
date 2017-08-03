@@ -9,9 +9,9 @@ Tested on OS X
 Let me know: jayson.e.grace@gmail.com
 
 ### TODO:
-[] Modularize
-[] Make friendly with other OS's
-[] Travis-CI
+- [] Modularize
+- [] Make friendly with other OS's
+- [] Travis-CI
 
 ## License
 MIT
