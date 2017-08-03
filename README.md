@@ -1,5 +1,6 @@
 # ansible-burp_extensions
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+
 Ansible role to install Burp extensions
 
 ### Limitations
