@@ -12,8 +12,10 @@ Tested on OS X
 Let me know: jayson.e.grace@gmail.com
 
 ### TODO:
-- [] Modularize
-- [] Make friendly with other OS's
+- [x] Modularize
+- [x] Make friendly with other OS's
+- [x] Figure out how to get latest release of an extension from github if offered
+- [] Create cronjob to destroy and rebuild every week
 - [] Travis-CI
 
 ## License
