@@ -1,0 +1,45 @@
+---
+- name: Install dependencies with brew
+  homebrew: name={{item}} state=latest update_homebrew=yes
+  with_items: "{{dependencies}}"
+  when: ansible_os_family == 'Darwin'
+
+- name: Install dependencies with linux package manager
+  package: name={{item}} state=latest
+  with_items: "{{dependencies}}"
+  when: (ansible_distribution == "CentOS") or
+        (ansible_distribution == "Debian")
+
+- name: Clone xss validator
+  git:
+   repo: git://github.com/nVisium/xssValidator.git
+   dest: "{{xss_validator_directory}}"
+
+- name: Create xss validator libs folder
+  file:
+   path: "{{xss_validator_lib_directory}}"
+   state: directory
+
+- name: Download xss validator libs
+  get_url: url={{item}} dest={{xss_validator_lib_directory}}
+  with_items: "{{xss_validator_deps}}"
+
+- name: Build the jar
+  shell: ant
+  args:
+   chdir: "{{xss_validator_bin_directory}}"
+
+- name: Move the jar into place
+  copy:
+   src: "{{xss_validator_bin_directory}}/xssValidator.jar"
+   dest: "{{extension_directory}}/xssValidator.jar"
+
+- name: Move xss-detector into place
+  copy:
+   src: "{{xss_detector}}"
+   dest: "{{extension_directory}}"
+
+- name: Clean up xss validator directory
+  file:
+   state: absent
+   path: "{{xss_validator_directory}}"

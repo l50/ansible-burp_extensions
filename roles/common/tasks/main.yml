@@ -1,0 +1,15 @@
+---
+- name: Create extensions directory
+  file:
+   path: "{{extension_directory}}"
+   state: directory
+
+- name: Create dependencies directory
+  file:
+   path: "{{dep_dir}}"
+   state: directory
+
+- name: Get jython standalone jar
+  get_url:
+   url: "http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/{{jython_version}}/jython-standalone-{{jython_version}}.jar"
+   dest: "{{dep_dir}}/jython-standalone-{{jython_version}}.jar"

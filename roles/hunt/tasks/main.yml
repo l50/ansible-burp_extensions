@@ -1,0 +1,5 @@
+---
+- name: Clone HUNT extension
+  git:
+   repo: git://github.com/bugcrowdlabs/HUNT.git
+   dest: "{{extension_directory}}/HUNT"

@@ -1,0 +1,9 @@
+---
+- name: Get latest burp-co2 release url
+  shell: curl -s https://api.github.com/repos/JGillam/burp-co2/releases/latest | grep browser_download_url | cut -d '"' -f 4
+  register: dl_link
+
+- name: Download latest burp-co2 extension jar
+  get_url:
+   url: "{{dl_link.stdout}}"
+   dest: "{{extension_directory}}/BurpCO2Suite.jar"
