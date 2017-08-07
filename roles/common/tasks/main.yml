@@ -17,6 +17,6 @@
 - name: Keep burp extensions up-to-date
   cron:
    name: "Wipe and reload the burpExtensions directory every 6 hours"
-   hour: "*/6"
-   job: "rm -rf {{extension_directory}}; cd {{ansible_env.HOME}}/{{ansible_workspace}}/; if ! out=`ansible-playbook site.yml`; then echo $out; fi"
+   hour: "*/16"
+   job: "rm -rf {{extension_directory}}; cd {{ansible_workspace}}; if ! out=`ansible-playbook site.yml`; then echo $out; fi"
   when: destroy_rebuild
