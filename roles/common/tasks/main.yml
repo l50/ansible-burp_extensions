@@ -13,3 +13,10 @@
   get_url:
    url: "http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/{{jython_version}}/jython-standalone-{{jython_version}}.jar"
    dest: "{{dep_dir}}/jython-standalone-{{jython_version}}.jar"
+
+- name: Keep burp extensions up-to-date
+  cron:
+   name: "Wipe and reload the burpExtensions directory every 6 hours"
+   hour: "*/6"
+   job: "rm -rf {{extension_directory}}; cd {{ansible_env.HOME}}/{{ansible_workspace}}/; if ! out=`ansible-playbook site.yml`; then echo $out; fi"
+  when: destroy_rebuild
