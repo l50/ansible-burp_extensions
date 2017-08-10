@@ -1,7 +1,7 @@
 # ansible-burp_extensions
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-Ansible role to install Burp extensions.
+Ansible playbook to install Burp extensions.
 
 In case you've stumbled across this project, it's my first Ansible role
 so try not to judge too harshly. Consider it a work in progress, and let
