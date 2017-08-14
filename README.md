@@ -8,7 +8,7 @@ so try not to judge too harshly. Consider it a work in progress, and let
 me know how I can make it better.
 
 ### Limitations
-Tested on OS X
+Tested on OS X && Ubuntu 16.04
 You need to be sure that the PATH for the version of python you're using
 with Ansible is set properly in the crontab:
 ```crontab -e```, copy/paste your PATH env at the top of the file and
