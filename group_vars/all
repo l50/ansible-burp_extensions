@@ -17,6 +17,7 @@ destroy_rebuild: true
 # XSS Validator package dependencies
 dependencies:
   - 'ant'
+  - 'default-jdk'
   - 'phantomjs'
 
 # XSS Validator directory shortcuts

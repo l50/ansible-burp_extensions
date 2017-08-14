@@ -8,7 +8,8 @@
   package: name={{item}} state=latest
   with_items: "{{dependencies}}"
   when: (ansible_distribution == "CentOS") or
-        (ansible_distribution == "Debian")
+        (ansible_distribution == "Debian") or
+        (ansible_distribution == 'Ubuntu')
 
 - name: Clone xss validator
   git:
