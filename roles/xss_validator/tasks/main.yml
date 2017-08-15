@@ -6,6 +6,7 @@
 
 - name: Install dependencies with linux package manager
   package: name={{item}} state=latest
+  become: true
   with_items: "{{dependencies}}"
   when: (ansible_distribution == "CentOS") or
         (ansible_distribution == "Debian") or

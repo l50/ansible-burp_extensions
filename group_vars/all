@@ -6,7 +6,7 @@ extension_directory: "{{ansible_env.HOME}}/burpExtensions"
 jython_version: '2.7.0'
 
 # Folder for dependencies to reside in
-dep_dir: "{{extension_directory}}/dependencies/"
+dep_dir: "{{extension_directory}}/dependencies"
 
 # Used to specify the workspace for ansible code development. Used by the cron job.
 ansible_workspace: "{{ansible_env.HOME}}/.ansible/Workspace/ansible-burp_extensions"
@@ -17,7 +17,6 @@ destroy_rebuild: true
 # XSS Validator package dependencies
 dependencies:
   - 'ant'
-  - 'default-jdk'
   - 'phantomjs'
 
 # XSS Validator directory shortcuts
