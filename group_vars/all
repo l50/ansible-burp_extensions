@@ -5,6 +5,9 @@ extension_directory: "{{ansible_env.HOME}}/burpExtensions"
 # Standalone jython version to use
 jython_version: '2.7.0'
 
+# Set $JAVA_HOME
+java_set_javahome: true
+
 # Folder for dependencies to reside in
 dep_dir: "{{extension_directory}}/dependencies"
 

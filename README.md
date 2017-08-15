@@ -14,6 +14,8 @@ ansible-galaxy install -r requirements.yml -p roles
 
 ### To run:
 ```
+ansible-playbook site.yml
+# If you need to specify your sudo password:
 ansible-playbook site.yml --ask-sudo-pass
 ```
 
