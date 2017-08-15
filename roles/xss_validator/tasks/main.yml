@@ -4,9 +4,9 @@
   with_items: "{{common_dependencies}}"
   when: ansible_os_family == 'Darwin'
 
-- name: Install brew specific dependencies
-  homebrew: name={{item}} state=latest update_homebrew=yes
-  with_items: "{{brew_dependencies}}"
+- name: Install brew cask specific dependencies
+  homebrew_cask: name={{item}} state=present
+  with_items: "{{brew_cask_dependencies}}"
   when: ansible_os_family == 'Darwin'
 
 - name: Install common dependencies with apt package manager

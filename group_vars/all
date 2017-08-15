@@ -23,8 +23,7 @@ common_dependencies:
   - 'phantomjs'
 
 # XSS Validator package dependencies that are OSX specific
-# brew cask install java
-brew_dependencies:
+brew_cask_dependencies:
   - 'java'
 
 # XSS Validator package dependencies that are ubuntu specific
