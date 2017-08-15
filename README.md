@@ -7,16 +7,9 @@ In case you've stumbled across this project, it's my first Ansible role
 so try not to judge too harshly. Consider it a work in progress, and let
 me know how I can make it better.
 
-### Install dependency:
-```
-ansible-galaxy install -r requirements.yml -p roles
-```
-
 ### To run:
 ```
 ansible-playbook site.yml
-# If you need to specify your sudo password:
-ansible-playbook site.yml --ask-sudo-pass
 ```
 
 ### Included Burp Extensions

@@ -17,10 +17,19 @@ ansible_workspace: "{{ansible_env.HOME}}/.ansible/Workspace/ansible-burp_extensi
 # Specify whether or not cron job to destroy and rebuild the extensions should be run
 destroy_rebuild: true
 
-# XSS Validator package dependencies
-dependencies:
+# XSS Validator package dependencies that are not OS specific
+common_dependencies:
   - 'ant'
   - 'phantomjs'
+
+# XSS Validator package dependencies that are OSX specific
+# brew cask install java
+brew_dependencies:
+  - 'java'
+
+# XSS Validator package dependencies that are ubuntu specific
+ubuntu_dependencies:
+  - 'default-jdk'
 
 # XSS Validator directory shortcuts
 xss_validator_directory: "{{extension_directory}}/xssValidator"

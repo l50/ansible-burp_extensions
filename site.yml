@@ -3,7 +3,6 @@
   hosts: all
 
   roles:
-    - {role: srsp.oracle-java, become: true}
     - common
     - co2
     - hunt

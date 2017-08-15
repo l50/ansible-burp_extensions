@@ -1,16 +1,25 @@
 ---
-- name: Install dependencies with brew
+- name: Install common dependencies with brew
   homebrew: name={{item}} state=latest update_homebrew=yes
-  with_items: "{{dependencies}}"
+  with_items: "{{common_dependencies}}"
   when: ansible_os_family == 'Darwin'
 
-- name: Install dependencies with linux package manager
+- name: Install brew specific dependencies
+  homebrew: name={{item}} state=latest update_homebrew=yes
+  with_items: "{{brew_dependencies}}"
+  when: ansible_os_family == 'Darwin'
+
+- name: Install common dependencies with apt package manager
   package: name={{item}} state=latest
   become: true
-  with_items: "{{dependencies}}"
-  when: (ansible_distribution == "CentOS") or
-        (ansible_distribution == "Debian") or
-        (ansible_distribution == 'Ubuntu')
+  with_items: "{{common_dependencies}}"
+  when: (ansible_distribution == 'Ubuntu')
+
+- name: Install ubuntu specific dependencies
+  package: name={{item}} state=latest
+  become: true
+  with_items: "{{ubuntu_dependencies}}"
+  when: (ansible_distribution == 'Ubuntu')
 
 - name: Clone xss validator
   git:
