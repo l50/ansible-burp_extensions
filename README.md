@@ -9,7 +9,7 @@ me know how I can make it better.
 
 ### To run:
 ```
-sudo ansible-playbook site.yml
+ansible-playbook site.yml
 ```
 
 ### Included Burp Extensions
