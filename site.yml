@@ -5,6 +5,9 @@
   roles:
     - common
     - co2
+    - content_type_converter
+    - csrf_scanner
     - hunt
+    - paramalyzer
     - retire_js
     - xss_validator

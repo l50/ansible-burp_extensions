@@ -1,0 +1,5 @@
+---
+- name: Download CSRF Scanner extension jar
+  get_url:
+    url: https://github.com/ah8r/csrf/blob/master/CSRFScanner.jar
+    dest: "{{extension_directory}}/CSRFScanner.jar"

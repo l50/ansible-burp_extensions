@@ -1,0 +1,5 @@
+---
+- name: Download Content-Type Converter extension jar
+  get_url:
+   url: "https://github.com/NetSPI/Burp-Extensions/releases/download/{{content_type_converter_version}}/ContentTypeConverter.jar"
+   dest: "{{extension_directory}}/ContentTypeConverter.jar"

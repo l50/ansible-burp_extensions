@@ -13,11 +13,15 @@ ansible-playbook site.yml
 ```
 
 ### Included Burp Extensions
-* Burp CO2
+* CO2
 * HUNT Methodology
 * HUNT Scanner
 * Retire.js
 * XSS Validator
+* Content-Type Converter
+* CSRF Scanner (currently broken -
+  https://github.com/ah8r/csrf/issues/9)
+* Paramalyzer
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
@@ -35,10 +39,10 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Figure out how to get latest release of an extension from github
   if offered
 - [x] Create cronjob to destroy and rebuild every week
-- [] Add Content-Type Converter
-- [] Add CSRF Scanner
+- [x] Add Content-Type Converter
+- [x] Add CSRF Scanner
+- [x] Add Paramalyzer
 - [] Add J2EEScan
-- [] Add Paramalyzer
 - [] Travis-CI
 
 ## License

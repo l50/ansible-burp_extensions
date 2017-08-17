@@ -1,0 +1,5 @@
+---
+- name: Download Paramalyzer extension jar
+  get_url:
+   url: "https://github.com/JGillam/burp-paramalyzer/releases/download/v{{paramalyzer_release}}/burp-paramalyzer.jar"
+   dest: "{{extension_directory}}/burp-paramalyzer.jar"

@@ -1,5 +1,5 @@
 ---
 - name: Download Retire.js extension jar
   get_url:
-   url: https://raw.githubusercontent.com/h3xstream/burp-retire-js/gh-pages/releases/burp/burp-retire-js-2.3.0.jar
+   url: "https://raw.githubusercontent.com/h3xstream/burp-retire-js/gh-pages/releases/burp/burp-retire-js-{{retire_js_version}}.jar"
    dest: "{{extension_directory}}/burp-retire-js.jar"
