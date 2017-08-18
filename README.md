@@ -29,6 +29,9 @@ You need to be sure that the PATH for the version of python you're using
 with Ansible is set properly in the crontab:
 ```crontab -e```
 ```PATH=<your path>``` <- put this at the top of the file and save it.
+If you have a proxy, put your proxy settings in here too:
+```http_proxy=<proxy>```
+etc.
 
 ### Something Missing?
 Let me know: jayson.e.grace@gmail.com
