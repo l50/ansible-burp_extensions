@@ -1,5 +1,5 @@
 # ansible-burp_extensions
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/l50/ansible-burp_extensions/blob/master/LICENSE)
 
 Ansible playbook to install Burp extensions.
 
