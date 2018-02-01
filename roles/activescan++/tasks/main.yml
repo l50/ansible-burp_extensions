@@ -1,0 +1,5 @@
+---
+- name: Clone ActiveScan++ extension
+  git:
+   repo: git://github.com/PortSwigger/active-scan-plus-plus.git
+   dest: "{{extension_directory}}/active-scan-plus-plus"

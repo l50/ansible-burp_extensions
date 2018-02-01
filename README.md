@@ -23,6 +23,7 @@ ansible-playbook site.yml
   https://github.com/ah8r/csrf/issues/9)
 * Paramalyzer
 * Logger++
+* ActiveScan++
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
@@ -47,6 +48,8 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add CSRF Scanner
 - [x] Add Paramalyzer
 - [x] Add Logger++
+- [] ActiveScan++
+- [] Backslash Powered Scanner
 - [] Add J2EEScan
 - [] Travis-CI
 
