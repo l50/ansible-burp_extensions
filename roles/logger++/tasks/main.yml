@@ -1,0 +1,5 @@
+---
+- name: Download Logger++ extension jar
+  get_url:
+    url: "https://github.com/nccgroup/BurpSuiteLoggerPlusPlus/raw/master/burplogger%2B%2B.jar"
+    dest: "{{extension_directory}}/burplogger++.jar"

@@ -22,6 +22,7 @@ ansible-playbook site.yml
 * CSRF Scanner (currently broken -
   https://github.com/ah8r/csrf/issues/9)
 * Paramalyzer
+* Logger++
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
@@ -45,6 +46,7 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add Content-Type Converter
 - [x] Add CSRF Scanner
 - [x] Add Paramalyzer
+- [x] Add Logger++
 - [] Add J2EEScan
 - [] Travis-CI
 
