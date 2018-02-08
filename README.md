@@ -19,8 +19,6 @@ ansible-playbook site.yml
 * Retire.js
 * XSS Validator
 * Content-Type Converter
-* CSRF Scanner (currently broken -
-  https://github.com/ah8r/csrf/issues/9)
 * Paramalyzer
 * Logger++
 * ActiveScan++
@@ -45,12 +43,13 @@ Let me know: jayson.e.grace@gmail.com
   if offered
 - [x] Create cronjob to destroy and rebuild every week
 - [x] Add Content-Type Converter
-- [x] Add CSRF Scanner
+- [] Add CSRF Scanner - Needs to be fixed
 - [x] Add Paramalyzer
 - [x] Add Logger++
-- [] ActiveScan++
-- [] Backslash Powered Scanner
+- [] Add ActiveScan++
+- [] Add Backslash Powered Scanner
 - [] Add J2EEScan
+- [] Add AuthMatrix
 - [] Travis-CI
 
 ## License
