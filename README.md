@@ -43,12 +43,12 @@ Let me know: jayson.e.grace@gmail.com
   if offered
 - [x] Create cronjob to destroy and rebuild every week
 - [x] Add Content-Type Converter
-- [] Add CSRF Scanner - Needs to be fixed
+- [x] Add CSRF Scanner
 - [x] Add Paramalyzer
 - [x] Add Logger++
-- [] Add ActiveScan++
+- [x] Add ActiveScan++
 - [] Add Backslash Powered Scanner
-- [] Add J2EEScan
+- [x] Add J2EEScan
 - [] Add AuthMatrix
 - [] Travis-CI
 

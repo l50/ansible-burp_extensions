@@ -1,5 +1,5 @@
 ---
-- name: Clone ActiveScan++ extension
-  git:
-   repo: git://github.com/PortSwigger/active-scan-plus-plus.git
-   dest: "{{extension_directory}}/active-scan-plus-plus"
+- name: Download ActiveScan++ extension bapp
+  get_url:
+    url: https://portswigger.net/bappstore/bapps/download/3123d5b5f25c4128894d97ea1acc4976
+    dest: "{{extension_directory}}/active-scan-plus-plus.bapp"

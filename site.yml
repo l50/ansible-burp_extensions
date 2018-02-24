@@ -13,3 +13,4 @@
     - xss_validator
     - logger++
     - activescan++
+    - j2ee_scan

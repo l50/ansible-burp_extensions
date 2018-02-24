@@ -1,5 +1,5 @@
 ---
-- name: Download CSRF Scanner extension jar
+- name: Download CSRF Scanner extension bapp
   get_url:
-    url: https://github.com/ah8r/csrf/blob/master/CSRFScanner.jar
-    dest: "{{extension_directory}}/CSRFScanner.jar"
+    url: https://portswigger.net/bappstore/bapps/download/60f172f27a9b49a1b538ed414f9f27c3
+    dest: "{{extension_directory}}/CSRFScanner.bapp"
