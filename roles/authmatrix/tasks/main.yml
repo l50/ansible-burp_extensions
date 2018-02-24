@@ -1,0 +1,5 @@
+---
+- name: Download AuthMatrix extension bapp
+  get_url:
+    url: https://portswigger.net/bappstore/bapps/download/30d8ee9f40c041b0bfec67441aad158e
+    dest: "{{extension_directory}}/AuthMatrix.bapp"

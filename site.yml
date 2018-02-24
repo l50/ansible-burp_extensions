@@ -14,3 +14,5 @@
     - logger++
     - activescan++
     - j2ee_scan
+    - backslash_powered_scanner
+    - authmatrix

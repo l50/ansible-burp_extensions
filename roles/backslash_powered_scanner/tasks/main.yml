@@ -1,0 +1,5 @@
+---
+- name: Download backslash-powered-scanner extension bapp
+  get_url:
+    url: https://portswigger.net/bappstore/bapps/download/9cff8c55432a45808432e26dbb2b41d8
+    dest: "{{extension_directory}}/Backslash_Powered_Scanner.bapp"

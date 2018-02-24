@@ -14,14 +14,18 @@ ansible-playbook site.yml
 
 ### Included Burp Extensions
 * CO2
-* HUNT Methodology
-* HUNT Scanner
 * Retire.js
 * XSS Validator
-* Content-Type Converter
 * Paramalyzer
+* Content-Type Converter
+* HUNT Methodology
+* HUNT Scanner
 * Logger++
-* ActiveScan++
+* J2EEScan (bapp)
+* CSRF Scanner (bapp)
+* ActiveScan++ (bapp)
+* Backslash-Powered-Scanner (bapp)
+* AuthMatrix (bapp)
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
@@ -47,9 +51,9 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add Paramalyzer
 - [x] Add Logger++
 - [x] Add ActiveScan++
-- [] Add Backslash Powered Scanner
+- [x] Add Backslash Powered Scanner
 - [x] Add J2EEScan
-- [] Add AuthMatrix
+- [x] Add AuthMatrix
 - [] Travis-CI
 
 ## License
