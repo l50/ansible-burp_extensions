@@ -1,5 +1,5 @@
 ---
-- name: Download Logger++ extension jar
+- name: Download Logger++ extension bapp
   get_url:
-    url: "https://github.com/nccgroup/BurpSuiteLoggerPlusPlus/raw/master/burplogger%2B%2B.jar"
-    dest: "{{extension_directory}}/burplogger++.jar"
+    url: "https://portswigger.net/bappstore/470b7057b86f41c396a97903377f3d81"
+    dest: "{{extension_directory}}/Logger++.bapp"

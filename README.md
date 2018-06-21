@@ -17,10 +17,10 @@ ansible-playbook site.yml
 * Retire.js
 * XSS Validator
 * Paramalyzer
-* Content-Type Converter
+* Content-Type Converter (bapp)
 * HUNT Methodology
 * HUNT Scanner
-* Logger++
+* Logger++ (bapp)
 * J2EEScan (bapp)
 * CSRF Scanner (bapp)
 * ActiveScan++ (bapp)
@@ -56,6 +56,7 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add J2EEScan
 - [x] Add AuthMatrix
 - [x] Add Upload Scanner
+- [] Add Freddy, Deserialization Bug Finder
 - [] Travis-CI
 
 ## License
