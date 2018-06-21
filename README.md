@@ -16,14 +16,14 @@ ansible-playbook site.yml
 * ActiveScan++ (bapp)
 * AuthMatrix (bapp)
 * Backslash-Powered-Scanner (bapp)
-* CO2
+* CO2 (bapp)
 * Content-Type Converter (bapp)
 * CSRF Scanner (bapp)
 * HUNT Methodology
 * HUNT Scanner
 * J2EEScan (bapp)
 * Logger++ (bapp)
-* Paramalyzer
+* Paramalyzer (bapp)
 * Retire.js (bapp)
 * Upload Scanner (bapp)
 * XSS Validator

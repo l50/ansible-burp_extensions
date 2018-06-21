@@ -1,5 +1,5 @@
 ---
 - name: Download Logger++ extension bapp
   get_url:
-    url: "https://portswigger.net/bappstore/470b7057b86f41c396a97903377f3d81"
+    url: https://portswigger.net/bappstore/bapps/download/470b7057b86f41c396a97903377f3d81
     dest: "{{extension_directory}}/Logger++.bapp"

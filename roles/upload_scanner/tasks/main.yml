@@ -1,5 +1,5 @@
 ---
 - name: Download upload-scanner extension bapp
   get_url:
-    url: https://portswigger.net/bappstore/b2244cbb6953442cb3c82fa0a0d908fa
+    url: https://portswigger.net/bappstore/bapps/download/b2244cbb6953442cb3c82fa0a0d908fa
     dest: "{{extension_directory}}/Upload_Scanner.bapp"

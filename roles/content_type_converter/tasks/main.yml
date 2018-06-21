@@ -1,5 +1,5 @@
 ---
 - name: Download Content-Type Converter extension bapp
   get_url:
-    url: https://portswigger.net/bappstore/db57ecbe2cb7446292a94aa6181c9278
+    url: https://portswigger.net/bappstore/bapps/download/db57ecbe2cb7446292a94aa6181c9278
     dest: "{{extension_directory}}/Content_Type_Converter.bapp"

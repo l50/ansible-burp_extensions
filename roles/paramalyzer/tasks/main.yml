@@ -1,5 +1,5 @@
 ---
-- name: Download Paramalyzer extension jar
+- name: Download Paramalyzer extension bapp
   get_url:
-   url: "https://github.com/JGillam/burp-paramalyzer/releases/download/v{{paramalyzer_release}}/burp-paramalyzer.jar"
-   dest: "{{extension_directory}}/burp-paramalyzer.jar"
+    url: https://portswigger.net/bappstore/bapps/download/0ac13c45adff4e31a3ca8dc76dd6286c
+    dest: "{{extension_directory}}/paramalyzer.bapp"

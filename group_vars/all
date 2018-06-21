@@ -47,11 +47,5 @@ xss_validator_deps:
   - http://central.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.jar
   - http://central.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.6/httpmime-4.3.6.jar
 
-# Retire.js version
-retire_js_version: '2.3.0'
-
-# Paramalyzer version
-paramalyzer_release: '1.1.0-beta'
-
 # Ansible playbook bin location
 ansible_playbook_bin: '{{ansible_env.HOME}}/.pyenv/shims/ansible-playbook'
