@@ -14,7 +14,7 @@ ansible-playbook site.yml
 
 ### Included Burp Extensions
 * CO2
-* Retire.js
+* Retire.js (bapp)
 * XSS Validator
 * Paramalyzer
 * Content-Type Converter (bapp)
