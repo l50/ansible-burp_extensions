@@ -1,5 +1,5 @@
 ---
-- name: Download Retire.js extension jar
+- name: Download Retire.js extension bapp
   get_url:
-   url: "https://raw.githubusercontent.com/h3xstream/burp-retire-js/gh-pages/releases/burp/burp-retire-js-{{retire_js_version}}.jar"
-   dest: "{{extension_directory}}/burp-retire-js.jar"
+    url: https://portswigger.net/bappstore/36238b534a78494db9bf2d03f112265c
+   dest: "{{extension_directory}}/retire-js.bapp"
