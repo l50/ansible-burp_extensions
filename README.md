@@ -26,6 +26,7 @@ ansible-playbook site.yml
 * ActiveScan++ (bapp)
 * Backslash-Powered-Scanner (bapp)
 * AuthMatrix (bapp)
+* Upload Scanner (bapp)
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
@@ -54,6 +55,7 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add Backslash Powered Scanner
 - [x] Add J2EEScan
 - [x] Add AuthMatrix
+- [x] Add Upload Scanner
 - [] Travis-CI
 
 ## License
