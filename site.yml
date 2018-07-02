@@ -3,17 +3,19 @@
   hosts: all
 
   roles:
-    - common
     - co2
-    - content_type_converter
-    - csrf_scanner
+    - xss_validator
+    - common
+    - retire_js
     - hunt
     - paramalyzer
-    - retire_js
-    - xss_validator
+    - csrf_scanner
+    - content_type_converter
     - logger++
     - activescan++
-    - j2ee_scan
     - backslash_powered_scanner
+    - j2ee_scan
     - authmatrix
     - upload_scanner
+    - copy_as_python_requests
+    - json_web_tokens

@@ -18,10 +18,12 @@ ansible-playbook site.yml
 * Backslash-Powered-Scanner (bapp)
 * CO2 (bapp)
 * Content-Type Converter (bapp)
+* Copy As Python-Requests (bapp)
 * CSRF Scanner (bapp)
 * HUNT Methodology
 * HUNT Scanner
 * J2EEScan (bapp)
+* JSON Web Tokens (bapp)
 * Logger++ (bapp)
 * Paramalyzer (bapp)
 * Retire.js (bapp)
@@ -56,6 +58,8 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add J2EEScan
 - [x] Add AuthMatrix
 - [x] Add Upload Scanner
+- [x] Add Copy As Python-Requests
+- [x] Add JSON Web Tokens
 - [] Add Freddy, Deserialization Bug Finder
 - [] Travis-CI
 
