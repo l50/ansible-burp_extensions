@@ -20,11 +20,11 @@ ansible-playbook site.yml
 * Content-Type Converter (bapp)
 * Copy As Python-Requests (bapp)
 * CSRF Scanner (bapp)
-* Freddy, Deserialization Bug Finder (bapp)
+* Freddy, Deserialization Bug Finder (bapp) - Detect and exploit serialisation libs and APIs
 * HUNT Methodology
 * HUNT Scanner
 * J2EEScan (bapp)
-* JSON Web Tokens (bapp)
+* JSON Web Tokens (bapp) - Used to manipulate a JWT
 * Logger++ (bapp)
 * Paramalyzer (bapp)
 * Retire.js (bapp)
