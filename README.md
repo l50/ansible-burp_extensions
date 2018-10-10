@@ -29,7 +29,9 @@ ansible-playbook site.yml
 * Paramalyzer (bapp)
 * Retire.js (bapp)
 * Upload Scanner (bapp)
-* XSS Validator
+* XSS Validator - An issue exists on OSX because they moved phantomjs to
+  cask. Commented out of site.yml for now since I'm not really using it
+  much anyway.
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04

@@ -4,7 +4,7 @@
 
   roles:
     - co2
-    - xss_validator
+    #- xss_validator
     - common
     - retire_js
     - hunt
