@@ -19,5 +19,5 @@
    name: "Wipe and reload the burpExtensions directory at 16:00 every day"
    minute: '0'
    hour: "16"
-   job: "mv {{extension_directory}} {{extension_directory}}.bak; {{ansible_playbook_bin}} {{ansible_workspace}}/site.yml -vvv; if [[ -d {{extension_directory}} ]]; then rm -rf {{extension_directory}}.bak; else cp -r {{extension_directory}}.bak {{extension_directory}}; fi"
+   job: "mv {{extension_directory}} {{extension_directory}}.bak && {{ansible_playbook_bin}} {{ansible_workspace}}/site.yml -vvv && if [[ -d {{extension_directory}} ]]; then rm -rf {{extension_directory}}.bak; else cp -r {{extension_directory}}.bak {{extension_directory}}; fi"
   when: destroy_rebuild
