@@ -3,13 +3,13 @@
   hosts: all
 
   roles:
+    - common
     - co2
     #- xss_validator
-    - common
     - retire_js
     - hunt
     - paramalyzer
-    - csrf_scanner
+      #- csrf_scanner
     - content_type_converter
     - logger++
     - activescan++
