@@ -48,4 +48,4 @@ xss_validator_deps:
   - http://central.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.6/httpmime-4.3.6.jar
 
 # Ansible playbook bin location
-ansible_playbook_bin: '{{ansible_env.HOME}}/.pyenv/shims/ansible-playbook'
+ansible_playbook_bin: '/usr/local/bin/ansible-playbook'
