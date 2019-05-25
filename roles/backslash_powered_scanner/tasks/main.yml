@@ -1,5 +1,20 @@
 ---
-- name: Download backslash-powered-scanner extension bapp
+- name: Download bapp
   get_url:
-    url: https://portswigger.net/bappstore/bapps/download/9cff8c55432a45808432e26dbb2b41d8
-    dest: "{{extension_directory}}/Backslash_Powered_Scanner.bapp"
+    url: "{{ bapp_link }}" 
+    dest: "{{ bapp_file }}"
+
+- name: Create directory for bapp
+  file:
+    path: "{{ unzip_dir }}"
+    state: directory
+
+- name: Unarchive bapp
+  unarchive:
+    src: "{{ bapp_file }}"
+    dest: "{{ unzip_dir }}"
+
+- name: Clean up bapp
+  file: 
+    state: absent
+    path: "{{ bapp_file }}"
