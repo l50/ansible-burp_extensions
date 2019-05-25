@@ -19,7 +19,6 @@ ansible-playbook site.yml
 * CO2 (bapp)
 * Content-Type Converter (bapp)
 * Copy As Python-Requests (bapp)
-* CSRF Scanner (bapp)
 * Freddy, Deserialization Bug Finder (bapp) - Detect and exploit serialisation libs and APIs
 * HUNT Methodology
 * HUNT Scanner
@@ -53,7 +52,6 @@ Let me know: jayson.e.grace@gmail.com
   if offered
 - [x] Create cronjob to destroy and rebuild every week
 - [x] Add Content-Type Converter
-- [x] Add CSRF Scanner
 - [x] Add Paramalyzer
 - [x] Add Logger++
 - [x] Add ActiveScan++

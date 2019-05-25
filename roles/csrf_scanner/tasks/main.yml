@@ -1,5 +1,0 @@
----
-- name: Download CSRF Scanner extension bapp
-  get_url:
-    url: https://portswigger.net/bappstore/bapps/download/60f172f27a9b49a1b538ed414f9f27c3
-    dest: "{{extension_directory}}/CSRFScanner.bapp"
