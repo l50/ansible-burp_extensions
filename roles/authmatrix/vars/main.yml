@@ -1,0 +1,3 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/30d8ee9f40c041b0bfec67441aad158e
+bapp_file: "{{extension_dir}}/authmatrix.bapp"
+unzip_dir: "{{extension_dir}}/authmatrix"

@@ -1,0 +1,4 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/3123d5b5f25c4128894d97ea1acc4976 
+bapp_file: "{{extension_dir}}/active-scan-plus-plus.bapp"
+unzip_dir: "{{extension_dir}}/active-scan-plus-plus"
+
