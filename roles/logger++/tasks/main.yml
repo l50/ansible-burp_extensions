@@ -1,5 +1,20 @@
 ---
-- name: Download Logger++ extension bapp
+- name: Download bapp
   get_url:
-    url: https://portswigger.net/bappstore/bapps/download/470b7057b86f41c396a97903377f3d81
-    dest: "{{extension_directory}}/Logger++.bapp"
+    url: "{{ bapp_link }}"
+    dest: "{{ bapp_file }}"
+
+- name: Create directory for bapp
+  file:
+    path: "{{ unzip_dir }}"
+    state: directory
+
+- name: Unarchive bapp
+  unarchive:
+    src: "{{ bapp_file }}"
+    dest: "{{ unzip_dir }}"
+
+- name: Clean up bapp
+  file:
+    state: absent
+    path: "{{ bapp_file }}"
