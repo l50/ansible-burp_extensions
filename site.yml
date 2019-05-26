@@ -9,7 +9,6 @@
     - retire_js
     - hunt
     - paramalyzer
-      #- csrf_scanner
     - content_type_converter
     - logger++
     - activescan++
