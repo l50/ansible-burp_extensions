@@ -1,5 +1,20 @@
 ---
-- name: Download freddy-deserialization-bug-finder extension bapp
+- name: Download bapp
   get_url:
-    url: https://portswigger.net/bappstore/bapps/download/ae1cce0c6d6c47528b4af35faebc3ab3
-    dest: "{{extension_dir}}/Freddy,_Deserialization_Bug_Finder_v2.0.bapp"
+    url: "{{ bapp_link }}"
+    dest: "{{ bapp_file }}"
+
+- name: Create directory for bapp
+  file:
+    path: "{{ unzip_dir }}"
+    state: directory
+
+- name: Unarchive bapp
+  unarchive:
+    src: "{{ bapp_file }}"
+    dest: "{{ unzip_dir }}"
+
+- name: Clean up bapp
+  file:
+    state: absent
+    path: "{{ bapp_file }}"
