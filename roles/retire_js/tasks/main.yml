@@ -1,5 +1,20 @@
 ---
-- name: Download Retire.js extension bapp
+- name: Download bapp
   get_url:
-    url: https://portswigger.net/bappstore/bapps/download/36238b534a78494db9bf2d03f112265c
-    dest: "{{extension_directory}}/retire-js.bapp"
+    url: "{{ bapp_link }}"
+    dest: "{{ bapp_file }}"
+
+- name: Create directory for bapp
+  file:
+    path: "{{ unzip_dir }}"
+    state: directory
+
+- name: Unarchive bapp
+  unarchive:
+    src: "{{ bapp_file }}"
+    dest: "{{ unzip_dir }}"
+
+- name: Clean up bapp
+  file:
+    state: absent
+    path: "{{ bapp_file }}"
