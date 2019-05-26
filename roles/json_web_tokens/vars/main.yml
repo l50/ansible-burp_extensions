@@ -1,0 +1,4 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/f923cbf91698420890354c1d8958fee6
+bapp_file: "{{extension_dir}}/json_web_tokens.bapp"
+unzip_dir: "{{extension_dir}}/json_web_tokens"
+

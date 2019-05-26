@@ -1,5 +1,20 @@
 ---
-- name: Download json-web-tokens extension bapp
+- name: Download bapp
   get_url:
-    url: https://portswigger.net/bappstore/bapps/download/f923cbf91698420890354c1d8958fee6
-    dest: "{{extension_dir}}/JSON_Web_Tokens.bapp"
+    url: "{{ bapp_link }}"
+    dest: "{{ bapp_file }}"
+
+- name: Create directory for bapp
+  file:
+    path: "{{ unzip_dir }}"
+    state: directory
+
+- name: Unarchive bapp
+  unarchive:
+    src: "{{ bapp_file }}"
+    dest: "{{ unzip_dir }}"
+
+- name: Clean up bapp
+  file:
+    state: absent
+    path: "{{ bapp_file }}"
