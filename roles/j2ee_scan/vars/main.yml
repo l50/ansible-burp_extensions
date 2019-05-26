@@ -1,0 +1,4 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/7ec6d429fed04cdcb6243d8ba7358880
+bapp_file: "{{extension_dir}}/j2ee_scan.bapp"
+unzip_dir: "{{extension_dir}}/j2ee_scan"
+
