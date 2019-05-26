@@ -1,0 +1,3 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/b324647b6efa4b6a8f346389730df160
+bapp_file: "{{extension_dir}}/copy_as_python_requests.bapp"
+unzip_dir: "{{extension_dir}}/copy_as_python_requests"
