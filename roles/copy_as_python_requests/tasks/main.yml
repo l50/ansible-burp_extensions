@@ -2,4 +2,4 @@
 - name: Download copy-as-python-requests extension bapp
   get_url:
     url: https://portswigger.net/bappstore/bapps/download/b324647b6efa4b6a8f346389730df160
-    dest: "{{extension_directory}}/Copy_As_Python-Requests.bapp"
+    dest: "{{extension_dir}}/Copy_As_Python-Requests.bapp"

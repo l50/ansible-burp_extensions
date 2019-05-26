@@ -2,4 +2,4 @@
 - name: Download J2EE extension bapp
   get_url:
     url: https://portswigger.net/bappstore/bapps/download/7ec6d429fed04cdcb6243d8ba7358880
-    dest: "{{extension_directory}}/j2ee.bapp"
+    dest: "{{extension_dir}}/j2ee.bapp"

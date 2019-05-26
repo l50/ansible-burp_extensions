@@ -2,4 +2,4 @@
 - name: Download freddy-deserialization-bug-finder extension bapp
   get_url:
     url: https://portswigger.net/bappstore/bapps/download/ae1cce0c6d6c47528b4af35faebc3ab3
-    dest: "{{extension_directory}}/Freddy,_Deserialization_Bug_Finder_v2.0.bapp"
+    dest: "{{extension_dir}}/Freddy,_Deserialization_Bug_Finder_v2.0.bapp"

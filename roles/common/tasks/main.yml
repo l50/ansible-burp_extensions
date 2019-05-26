@@ -1,7 +1,7 @@
 ---
 - name: Create extensions directory
   file:
-   path: "{{extension_directory}}"
+   path: "{{extension_dir}}"
    state: directory
 
 - name: Create dependencies directory
@@ -19,5 +19,5 @@
    name: "Wipe and reload the burpExtensions directory at 16:00 every day"
    minute: '0'
    hour: "16"
-   job: "mv {{extension_directory}} {{extension_directory}}.bak && {{ansible_playbook_bin}} {{ansible_workspace}}/site.yml -vvv && if [[ -d {{extension_directory}} ]]; then rm -rf {{extension_directory}}.bak; else cp -r {{extension_directory}}.bak {{extension_directory}}; fi"
+   job: "mv {{extension_dir}} {{extension_dir}}.bak && {{ansible_playbook_bin}} {{ansible_workspace}}/site.yml -vvv && if [[ -d {{extension_dir}} ]]; then rm -rf {{extension_dir}}.bak; else cp -r {{extension_dir}}.bak {{extension_dir}}; fi"
   when: destroy_rebuild

@@ -2,4 +2,4 @@
 - name: Download json-web-tokens extension bapp
   get_url:
     url: https://portswigger.net/bappstore/bapps/download/f923cbf91698420890354c1d8958fee6
-    dest: "{{extension_directory}}/JSON_Web_Tokens.bapp"
+    dest: "{{extension_dir}}/JSON_Web_Tokens.bapp"
