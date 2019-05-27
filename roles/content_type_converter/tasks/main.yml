@@ -18,3 +18,14 @@
   file:
     state: absent
     path: "{{ bapp_file }}"
+
+- name: Find path to jar file
+  find:
+    paths: "{{ unzip_dir }}"
+    patterns: "*.jar"
+    recurse: "yes"
+    file_type: "file"
+  register: path
+
+# Create fact so that this can be referenced later
+- set_fact: content_type_converter_path="{{ path.files.0.path }}"
