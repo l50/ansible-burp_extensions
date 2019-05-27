@@ -1,0 +1,4 @@
+- name: Configure Burp User Options
+  template:
+    src: "{{ ansible_workspace }}/templates/burp_user_options.json.tmpl"
+    dest: "{{ extension_dir }}/burp_user_options.json"	
