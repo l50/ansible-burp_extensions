@@ -8,9 +8,11 @@ so try not to judge too harshly. Consider it a work in progress, and let
 me know how I can make it better.
 
 ### To run:
+1. Run this command:
 ```
 ansible-playbook site.yml
 ```
+2. Once the command has finished, load the `~/burpExtensions/burp_user_options.json` file in burp for the user options
 
 ### Included Burp Extensions
 * ActiveScan++ (bapp)
