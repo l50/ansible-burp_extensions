@@ -63,7 +63,7 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add JSON Web Tokens
 - [x] Add Freddy, Deserialization Bug Finder
 - [x] Unarchive bapps
-- [] Add burp_user_options template
+- [x] Add burp_user_options template
 - [] Redo auto updates to create backup of previous, and then override ~/burpExtensions after all work has been done
 - [] Travis-CI
 
