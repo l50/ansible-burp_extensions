@@ -19,3 +19,4 @@
     - copy_as_python_requests
     - json_web_tokens
     - freddy_deserialization_bug_finder
+    - gen_user_options
