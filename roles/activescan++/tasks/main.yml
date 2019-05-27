@@ -28,4 +28,4 @@
   register: path
 
 # Create fact so that this can be referenced later
-- set_fact: active_scan_path="{{path.files.0.path}}"
+- set_fact: active_scan_path="{{ path.files.0.path }}"
