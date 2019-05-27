@@ -1,0 +1,12 @@
+if [[ -d {{ extension_dir }}.bak ]]; then
+  echo "Deleting backup"
+  rm -rf {{ extension_dir }}.bak
+fi
+
+if [[ -d {{ extension_dir }} ]]; then
+  echo "Moving existing to backup and updating"
+  mv {{ extension_dir }} {{ extension_dir }}.bak && {{ ansible_playbook_bin }} {{ ansible_workspace }}/site.yml -vvv
+else
+  echo "No extensions dir found previously, creating."
+  {{ ansible_playbook_bin }} {{ ansible_workspace }}/site.yml -vvv
+fi
