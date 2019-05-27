@@ -64,7 +64,9 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Add Freddy, Deserialization Bug Finder
 - [x] Unarchive bapps
 - [x] Add burp_user_options template
-- [] Redo auto updates to create backup of previous, and then override ~/burpExtensions after all work has been done
+- [x] Move auto-update to bash script template
+- [] Unit tests
+- [] DRY code up
 - [] Travis-CI
 
 ## License
