@@ -7,10 +7,26 @@ In case you've stumbled across this project, it's my first Ansible role
 so try not to judge too harshly. Consider it a work in progress, and let
 me know how I can make it better.
 
+### Setup
+Install dependencies:
+```
+ansible-galaxy install -r requirements.yml
+```
+Create directory for logs:
+```
+sudo chown -R <your username>:<suitable group for your user> /var/log/$USER
+```
+
+Make sure `~/.ansible.cfg` has the following in it:
+```
+[defaults]
+log_path = /var/log/<your username>/ansible.log
+```
+
 ### To run:
 1. Run this command:
 ```
-ansible-playbook site.yml
+ansible-playbook -vvv site.yml
 ```
 2. Once the command has finished, load the `~/burpExtensions/burp_user_options.json` file in burp for the user options
 
@@ -67,6 +83,7 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Unarchive bapps
 - [x] Add burp_user_options template
 - [x] Move auto-update to bash script template
+- [] Add logging and log rotation
 - [] Unit tests
 - [] DRY code up
 - [] Travis-CI

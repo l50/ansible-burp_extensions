@@ -1,6 +1,17 @@
 ---
 - name: Install Burp Extensions
   hosts: all
+  vars:
+    logrotate_scripts:
+      - name: ansible
+        path: "/var/log/{{ ansible_user_id }}/ansible.log"
+        options:
+          - daily
+          - missingok
+          - rotate 7
+          - maxage 7
+          - dateext
+          - dateyesterday
 
   roles:
     - common
