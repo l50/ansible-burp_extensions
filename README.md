@@ -41,11 +41,11 @@ ansible-playbook -vvv site.yml
 * HUNT Methodology
 * HUNT Scanner
 * J2EEScan
-* JSON Web Tokens - Used to manipulate a JWT
+* JSON Web Tokens - Used to manipulate JWTs
 * Logger++
 * Paramalyzer
 * Retire.js
-* SAML Raider
+* SAML Raider - Used for testing SAML infrastructure for vulnerabilities
 * Upload Scanner
 
 ### Limitations
