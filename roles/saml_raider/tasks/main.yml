@@ -1,0 +1,31 @@
+---
+- name: Download bapp
+  get_url:
+    url: "{{ bapp_link }}"
+    dest: "{{ bapp_file }}"
+
+- name: Create directory for bapp
+  file:
+    path: "{{ unzip_dir }}"
+    state: directory
+
+- name: Unarchive bapp
+  unarchive:
+    src: "{{ bapp_file }}"
+    dest: "{{ unzip_dir }}"
+
+- name: Clean up bapp
+  file:
+    state: absent
+    path: "{{ bapp_file }}"
+
+- name: Find path to jar file
+  find:
+    paths: "{{ unzip_dir }}"
+    patterns: "*.jar"
+    recurse: "yes"
+    file_type: "file"
+  register: path
+
+# Create fact so that this can be referenced later
+- set_fact: saml_raider_path="{{ path.files.0.path }}"

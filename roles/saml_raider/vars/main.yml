@@ -1,0 +1,3 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/c61cfa893bb14db4b01775554f7b802e
+bapp_file: "{{extension_dir}}/saml_raider.bapp"
+unzip_dir: "{{extension_dir}}/saml_raider"
