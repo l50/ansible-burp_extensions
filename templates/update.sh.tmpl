@@ -1,3 +1,7 @@
+echo "Getting latest version of repo"
+pushd {{ ansible_workspace }} && git pull origin master
+popd
+
 if [[ -d {{ extension_dir }}.bak ]]; then
   echo "Deleting backup"
   rm -rf {{ extension_dir }}.bak
