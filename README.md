@@ -31,24 +31,22 @@ ansible-playbook -vvv site.yml
 2. Once the command has finished, load the `~/burpExtensions/burp_user_options.json` file in burp for the user options
 
 ### Included Burp Extensions
-* ActiveScan++ (bapp)
-* AuthMatrix (bapp)
-* Backslash-Powered-Scanner (bapp)
-* CO2 (bapp)
-* Content-Type Converter (bapp)
-* Copy As Python-Requests (bapp)
-* Freddy, Deserialization Bug Finder (bapp) - Detect and exploit serialisation libs and APIs
+* ActiveScan++
+* AuthMatrix
+* Backslash-Powered-Scanner
+* CO2
+* Content-Type Converter
+* Copy As Python-Requests
+* Freddy, Deserialization Bug Finder - Detect and exploit serialisation libs and APIs
 * HUNT Methodology
 * HUNT Scanner
-* J2EEScan (bapp)
-* JSON Web Tokens (bapp) - Used to manipulate a JWT
-* Logger++ (bapp)
-* Paramalyzer (bapp)
-* Retire.js (bapp)
-* Upload Scanner (bapp)
-* XSS Validator - An issue exists on OSX because they moved phantomjs to
-  cask. Commented out of site.yml for now since I'm not really using it
-  much anyway.
+* J2EEScan
+* JSON Web Tokens - Used to manipulate a JWT
+* Logger++
+* Paramalyzer
+* Retire.js
+* SAML Raider
+* Upload Scanner
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
