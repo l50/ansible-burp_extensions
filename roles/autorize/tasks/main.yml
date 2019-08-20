@@ -19,10 +19,10 @@
     state: absent
     path: "{{ bapp_file }}"
 
-- name: Find path to jar file
+- name: Find path to python file
   find:
     paths: "{{ unzip_dir }}"
-    patterns: "*.jar"
+    patterns: "*.py"
     recurse: "yes"
     file_type: "file"
   register: path
