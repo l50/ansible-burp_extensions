@@ -33,6 +33,7 @@ ansible-playbook -vvv site.yml
 ### Included Burp Extensions
 * ActiveScan++
 * AuthMatrix
+* Autorize
 * Backslash-Powered-Scanner
 * CO2
 * Content-Type Converter
@@ -47,6 +48,13 @@ ansible-playbook -vvv site.yml
 * Retire.js
 * SAML Raider - Used for testing SAML infrastructure for vulnerabilities
 * Upload Scanner
+
+### To add a new extension
+1. Create a new role based on one of the other roles
+2. Change the path in `tasks/main.yml` to match the new role name
+3. Change the names of the extension in `vars/main.yml` to match the new role name
+4. Update the `bapp_link` link in `vars/main.yml`
+5. Add the new extension to `templates/burp_user_options.json.tmpl` under the `extensions` section
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
@@ -81,10 +89,7 @@ Let me know: jayson.e.grace@gmail.com
 - [x] Unarchive bapps
 - [x] Add burp_user_options template
 - [x] Move auto-update to bash script template
-- [] Add logging and log rotation
+- [x] Add logging and log rotation
 - [] Unit tests
 - [] DRY code up
 - [] Travis-CI
-
-## License
-MIT
