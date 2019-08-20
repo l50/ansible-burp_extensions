@@ -31,4 +31,5 @@
     - json_web_tokens
     - freddy_deserialization_bug_finder
     - saml_raider
+    - autorize
     - gen_user_options

@@ -1,0 +1,3 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/f9bbac8c4acf4aefa4d7dc92a991af2f
+bapp_file: "{{extension_dir}}/autorize.bapp"
+unzip_dir: "{{extension_dir}}/autorize"
