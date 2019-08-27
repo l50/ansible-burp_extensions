@@ -1,7 +1,8 @@
 # ansible-burp_extensions
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/l50/ansible-burp_extensions/blob/master/LICENSE)
 
-Ansible playbook to install Burp extensions.
+Ansible playbook to install Burp extensions. It also maintains a user options file (through templating) and a project options file, 
+which help to have a uniform experience across different systems.
 
 In case you've stumbled across this project, it's my first Ansible role
 so try not to judge too harshly. Consider it a work in progress, and let
