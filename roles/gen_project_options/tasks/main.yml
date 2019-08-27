@@ -1,0 +1,4 @@
+- name: Generate Burp Project Options from template
+  template:
+    src: "{{ ansible_workspace }}/files/burp_project_options.json"
+    dest: "{{ extension_dir }}/burp_project_options.json"	

@@ -33,3 +33,4 @@
     - saml_raider
     - autorize
     - gen_user_options
+    - gen_project_options
