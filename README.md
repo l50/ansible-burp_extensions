@@ -28,7 +28,7 @@ log_path = /var/log/<your username>/ansible.log
 ```
 ansible-playbook -vvv site.yml
 ```
-2. Once the command has finished, load the `~/burpExtensions/burp_user_options.json` file in burp for the user options
+2. Once the command has finished, load the `~/burp_extensions/burp_user_options.json` file in burp for the user options
 
 ### Included Burp Extensions
 * ActiveScan++

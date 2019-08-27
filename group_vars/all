@@ -1,6 +1,6 @@
 ---
 # Directory in which to install the various extensions
-extension_dir: "{{ansible_env.HOME}}/burpExtensions"
+extension_dir: "{{ansible_env.HOME}}/burp_extensions"
 
 # Standalone jython version to use
 jython_version: '2.7.0'

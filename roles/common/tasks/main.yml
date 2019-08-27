@@ -21,7 +21,7 @@
 
 - name: Keep burp extensions up-to-date
   cron:
-   name: "Wipe and reload the burpExtensions directory at 16:00 every day"
+   name: "Wipe and reload the burp_extensions directory at 16:00 every day"
    minute: '0'
    hour: "16"
    job: "bash {{ extension_dir }}/update.sh"
