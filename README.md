@@ -15,7 +15,7 @@ ansible-galaxy install -r requirements.yml
 ```
 Create directory for logs:
 ```
-sudo chown -R <your username>:<suitable group for your user> /var/log/$USER
+sudo mkdir /var/log/$USER && sudo chown -R <your username>:<suitable group for your user> /var/log/$USER
 ```
 
 Make sure `~/.ansible.cfg` has the following in it:
