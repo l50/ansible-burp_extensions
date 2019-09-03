@@ -39,6 +39,7 @@ ansible-playbook -vvv site.yml
 * CO2
 * Content-Type Converter
 * Copy As Python-Requests
+* EsPReSSO
 * Freddy, Deserialization Bug Finder - Detect and exploit serialisation libs and APIs
 * HUNT Methodology
 * HUNT Scanner
@@ -51,11 +52,13 @@ ansible-playbook -vvv site.yml
 * Upload Scanner
 
 ### To add a new extension
-1. Create a new role based on one of the other roles
+1. Create a new role based on one of the other roles (be sure to use a role that matches the language of the extension)
 2. Change the path in `tasks/main.yml` to match the new role name
 3. Change the names of the extension in `vars/main.yml` to match the new role name
 4. Update the `bapp_link` link in `vars/main.yml`
 5. Add the new extension to `templates/burp_user_options.json.tmpl` under the `extensions` section
+6. Add the new role to `site.yml`
+7. Be sure to update the list of Included Burp Extensions in the `README.md`
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04

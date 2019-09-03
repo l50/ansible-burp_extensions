@@ -1,0 +1,3 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/e1d08d4ab1ea4c17be3431d7d2b20b30
+bapp_file: "{{extension_dir}}/espresso.bapp"
+unzip_dir: "{{extension_dir}}/espresso"
