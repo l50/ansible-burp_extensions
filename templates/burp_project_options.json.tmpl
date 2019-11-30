@@ -366,6 +366,14 @@
                 "is_simple_match":false,
                 "rule_type":"response_header",
                 "string_match":"^Content-Security-Policy.*$"
+            },
+            {
+                "comment":"Check for Blind XSS in the Referer header",
+                "enabled":{{ referer_blind_xss }},
+                "is_simple_match":false,
+                "rule_type":"request_header",
+                "string_match":"^Referer.*$",
+                "string_replace":"Referer: {{ xss_hunter_script }}"
             }
         ],
         "miscellaneous":{
@@ -394,13 +402,13 @@
         "response_modification":{
             "convert_https_links_to_http":false,
             "enable_disabled_form_fields":false,
-            "highlight_unhidden_fields":false,
+            "highlight_unhidden_fields":true,
             "remove_all_javascript":false,
             "remove_input_field_length_limits":false,
-            "remove_javascript_form_validation":false,
+            "remove_javascript_form_validation":true,
             "remove_object_tags":false,
-            "remove_secure_flag_from_cookies":false,
-            "unhide_hidden_form_fields":false
+            "remove_secure_flag_from_cookies":true,
+            "unhide_hidden_form_fields":true
         },
         "ssl_pass_through":{
             "automatically_add_entries_on_client_ssl_negotiation_failure":false,

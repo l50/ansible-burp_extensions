@@ -24,10 +24,12 @@ Make sure `~/.ansible.cfg` has the following in it:
 log_path = /var/log/<your username>/ansible.log
 ```
 
+If you want to use XSSHunter to check for Blind XSS in the referer header, be sure to set `referer_blind_xss` in `group_vars/all` to "true". You will also need to specify the script to run using `xss_hunter_script`. A default example is provided that you can modify or replace completely. 
+
 ### To run:
 1. Run this command:
 ```
-ansible-playbook -vvv site.yml
+ansible-playbook -vvv site.yml 
 ```
 2. Once the command has finished, load the `~/burp_extensions/burp_user_options.json` file in burp for the user options
 
