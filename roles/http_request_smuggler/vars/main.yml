@@ -1,0 +1,3 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/aaaa60ef945341e8a450217a54a11646
+bapp_file: "{{extension_dir}}/http_request_smuggler.bapp"
+unzip_dir: "{{extension_dir}}/http_request_smuggler"

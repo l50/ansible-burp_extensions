@@ -19,6 +19,7 @@
     #- xss_validator
     - retire_js
     - hunt
+    - http_request_smuggler
     - paramalyzer
     - content_type_converter
     - logger++
