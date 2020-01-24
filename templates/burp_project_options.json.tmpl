@@ -221,6 +221,20 @@
                     "enabled":false,
                     "match_relationship":"is_in_target_scope",
                     "match_type":"url"
+                },
+                {
+                    "boolean_operator":"and",
+                    "enabled":true,
+                    "match_condition":".*getpocket.*",
+                    "match_relationship":"does_not_match",
+                    "match_type":"domain_name"
+                },
+                {
+                    "boolean_operator":"and",
+                    "enabled":true,
+                    "match_condition":".*mozilla.*",
+                    "match_relationship":"does_not_match",
+                    "match_type":"domain_name"
                 }
             ]
         },
