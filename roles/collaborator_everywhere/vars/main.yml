@@ -1,0 +1,4 @@
+bapp_link: https://portswigger.net/bappstore/bapps/download/2495f6fb364d48c3b6c984e226c02968
+bapp_file: "{{extension_dir}}/collaborator_everywhere.bapp"
+unzip_dir: "{{extension_dir}}/collaborator_everywhere"
+

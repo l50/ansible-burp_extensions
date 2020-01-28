@@ -16,7 +16,7 @@
   roles:
     - common
     - co2
-    #- xss_validator
+    - collaborator_everywhere
     - retire_js
     - hunt
     - http_request_smuggler

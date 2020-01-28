@@ -39,6 +39,7 @@ ansible-playbook -vvv site.yml
 * Autorize
 * Backslash-Powered-Scanner
 * CO2
+* Collaborator Everywhere
 * Content-Type Converter
 * Copy As Python-Requests
 * EsPReSSO
