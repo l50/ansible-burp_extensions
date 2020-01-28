@@ -44,6 +44,7 @@ ansible-playbook -vvv site.yml
 * Copy As Python-Requests
 * EsPReSSO
 * Freddy, Deserialization Bug Finder - Detect and exploit serialisation libs and APIs
+* GraphQL Raider
 * HTTP Request Smuggler
 * HUNT Methodology
 * HUNT Scanner
