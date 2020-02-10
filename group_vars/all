@@ -1,6 +1,6 @@
 ---
 # Directory in which to install the various extensions
-extension_dir: "{{ansible_env.HOME}}/burp_extensions"
+extension_dir: "{{ ansible_env.HOME }}/burp_extensions"
 
 # Standalone jython version to use
 jython_version: '2.7.0'
@@ -9,10 +9,10 @@ jython_version: '2.7.0'
 java_set_javahome: true
 
 # Folder for dependencies to reside in
-dep_dir: "{{extension_dir}}/dependencies"
+dep_dir: "{{ extension_dir }}/dependencies"
 
 # Used to specify the workspace for ansible code development. Used by the cron job.
-ansible_workspace: "{{ansible_env.HOME}}/.ansible/Workspace/ansible-burp_extensions"
+ansible_workspace: "{{ ansible_env.HOME }}/.ansible/Workspace/ansible-burp_extensions"
 
 # Specify whether or not cron job to destroy and rebuild the extensions should be run
 destroy_rebuild: true
@@ -22,5 +22,9 @@ ansible_playbook_bin: '/usr/local/bin/ansible-playbook'
 
 # Use XSSHunter to check for Blind XSS in the Referer header
 referer_blind_xss: 'false'
+
 # XSSHunter script to use
 xss_hunter_script: '\"><script src=https://yourusername.xss.ht></script>'
+
+# Path to log file location
+log_path: "{{ ansible_env.HOME }}/.ansible/logs"

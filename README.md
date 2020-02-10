@@ -13,25 +13,15 @@ Install dependencies:
 ```
 ansible-galaxy install -r requirements.yml
 ```
-Create directory for logs:
-```
-sudo mkdir /var/log/$USER && sudo chown -R <your username>:<suitable group for your user> /var/log/$USER
-```
-
-Make sure `~/.ansible.cfg` has the following in it:
-```
-[defaults]
-log_path = /var/log/<your username>/ansible.log
-```
 
 If you want to use XSSHunter to check for Blind XSS in the referer header, be sure to set `referer_blind_xss` in `group_vars/all` to "true". You will also need to specify the script to run using `xss_hunter_script`. A default example is provided that you can modify or replace completely. 
 
 ### To run:
 1. Run this command:
 ```
-ansible-playbook -vvv site.yml 
+ansible-playbook site.yml
 ```
-2. Once the command has finished, load the `~/burp_extensions/burp_user_options.json` file in burp for the user options
+2. Once the command has finished, load the `~/burp_extensions/burp_user_options.json` file in burp for the user options and the `~/burp_extensions/burp_project_options.json` file for the project options.
 
 ### Included Burp Extensions
 * ActiveScan++

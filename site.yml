@@ -3,8 +3,8 @@
   hosts: all
   vars:
     logrotate_scripts:
-      - name: ansible
-        path: "/var/log/{{ ansible_user_id }}/ansible.log"
+      - name: "Configure logrotate with the log file"
+        path: "{{ log_path }}/burp_extensions.log"
         options:
           - daily
           - missingok
