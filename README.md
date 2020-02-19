@@ -33,7 +33,7 @@ ansible-playbook site.yml
 * Content-Type Converter
 * Copy As Python-Requests
 * EsPReSSO
-* Freddy, Deserialization Bug Finder - Detect and exploit serialisation libs and APIs
+* ~~Freddy, Deserialization Bug Finder - Detect and exploit serialisation libs and APIs~~ - currently missing from the bapp store
 * GraphQL Raider
 * HTTP Request Smuggler
 * HUNT Methodology
@@ -57,13 +57,19 @@ ansible-playbook site.yml
 
 ### Limitations
 Tested on OS X && Ubuntu 16.04
+
 You need to be sure that the PATH for the version of python you're using
 with Ansible is set properly in the crontab:
-```crontab -e```
-```PATH=<your path>``` <- put this at the top of the file and save it.
+```
+crontab -e
+```
+Put this at the top of the file and save it:
+`PATH=<your path>`
+
 If you have a proxy, put your proxy settings in here too:
-```http_proxy=<proxy>```
-etc.
+```
+http_proxy=<proxy>
+```
 
 ### Something Missing?
 Let me know: jayson.e.grace@gmail.com
