@@ -4,7 +4,7 @@
   vars:
     logrotate_scripts:
       - name: "Configure logrotate with the log file"
-        path: "{{ log_path }}/burp_extensions.log"
+        path: "{{ log_path }}/{{ log_file_name }}"
         options:
           - daily
           - missingok
@@ -23,7 +23,7 @@
     - copy_as_python_requests
     - collaborator_everywhere
     - espresso
-    - freddy_deserialization_bug_finder
+    #- freddy_deserialization_bug_finder
     - graphql_raider
     - http_request_smuggler
     - hunt

@@ -28,3 +28,6 @@ xss_hunter_script: '\"><script src=https://yourusername.xss.ht></script>'
 
 # Path to log file location
 log_path: "{{ ansible_env.HOME }}/.ansible/logs"
+
+# Name of log file
+log_file_name: "burp_extensions.log"
