@@ -29,7 +29,7 @@ ansible-playbook site.yml
 * Autorize
 * Backslash-Powered-Scanner
 * CO2
-* Collaborator Everywhere
+* ~~Collaborator Everywhere~~ - breaks a lot of things
 * Content-Type Converter
 * Copy As Python-Requests
 * EsPReSSO
@@ -75,26 +75,6 @@ http_proxy=<proxy>
 Let me know: jayson.e.grace@gmail.com
 
 ### TODO:
-- [x] Modularize
-- [x] Make friendly with other OS's
-- [x] Figure out how to get latest release of an extension from github
-  if offered
-- [x] Create cronjob to destroy and rebuild every week
-- [x] Add Content-Type Converter
-- [x] Add Paramalyzer
-- [x] Add Logger++
-- [x] Add ActiveScan++
-- [x] Add Backslash Powered Scanner
-- [x] Add J2EEScan
-- [x] Add AuthMatrix
-- [x] Add Upload Scanner
-- [x] Add Copy As Python-Requests
-- [x] Add JSON Web Tokens
-- [x] Add Freddy, Deserialization Bug Finder
-- [x] Unarchive bapps
-- [x] Add burp_user_options template
-- [x] Move auto-update to bash script template
-- [x] Add logging and log rotation
 - [] Unit tests
 - [] DRY code up
 - [] Travis-CI
