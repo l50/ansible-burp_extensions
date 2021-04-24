@@ -29,7 +29,6 @@
     - hunt
     - j2ee_scan
     - json_web_tokens
-    - logger++
     - paramalyzer
     - retire_js
     - saml_raider
