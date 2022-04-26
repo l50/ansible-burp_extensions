@@ -1,6 +1,7 @@
 # ansible-burp_extensions
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/l50/ansible-burp_extensions/blob/master/LICENSE)
+[![Pre-Commit](https://github.com/l50/ansible-burp_extensions/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/l50/ansible-burp_extensions/actions/workflows/pre-commit.yaml)
 
 Ansible playbook to install Burp extensions.
 It also maintains a user options file and project options file (via template),
