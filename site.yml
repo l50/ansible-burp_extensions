@@ -1,6 +1,7 @@
 ---
 - name: Install Burp Extensions
-  hosts: all
+  hosts: localhost
+  connection: local
   vars:
     logrotate_scripts:
       - name: "Configure logrotate with the log file"

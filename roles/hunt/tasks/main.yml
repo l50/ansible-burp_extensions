@@ -1,7 +1,7 @@
 ---
 - name: Clone HUNT extension
-  git:
-   repo: git://github.com/bugcrowdlabs/HUNT.git
+  ansible.builtin.git:
+   repo: https://github.com/bugcrowdlabs/HUNT.git
    dest: "{{ extension_dir }}/HUNT"
 
 - name: Find path to python methodology file
