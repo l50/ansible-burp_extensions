@@ -1,4 +1,5 @@
 - name: Generate Burp User Options from template
-  template:
+  ansible.builtin.template:
     src: "{{ ansible_workspace }}/templates/burp_user_options.json.tmpl"
-    dest: "{{ extension_dir }}/burp_user_options.json"	
+    dest: "{{ extension_dir }}/burp_user_options.json"
+    mode: "0755"

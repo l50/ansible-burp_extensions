@@ -1,5 +1,3 @@
 bapp_link: https://portswigger.net/bappstore/bapps/download/ae1cce0c6d6c47528b4af35faebc3ab3
 bapp_file: "{{extension_dir}}/freddy_deserialization_bug_finder.bapp"
 unzip_dir: "{{extension_dir}}/freddy_deserialization_bug_finder"
-
-

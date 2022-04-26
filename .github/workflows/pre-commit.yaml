@@ -1,0 +1,31 @@
+---
+name: Pre-Commit
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  pre-commit:
+    name: Run pre-commit hooks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.18
+
+      - name: Install mage
+        run: go install github.com/magefile/mage@latest
+
+      - name: Compile magefile
+        run: mage -d .mage/ -compile ../magefile
+
+      - name: Install pre-commit hooks
+        run: ./magefile installDeps
+
+      - name: Run pre-commit
+        uses: pre-commit/action@v2.0.3

@@ -1,4 +1,3 @@
 bapp_link: https://portswigger.net/bappstore/bapps/download/4841f0d78a554ca381c65b26d48207e6
 bapp_file: "{{extension_dir}}/graphql_raider.bapp"
 unzip_dir: "{{extension_dir}}/graphql_raider"
-
