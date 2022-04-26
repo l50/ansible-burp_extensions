@@ -1,0 +1,7 @@
+---
+skip_list:
+  - 'yaml'
+  - 'role-name'
+
+warn_list:
+  - git-latest

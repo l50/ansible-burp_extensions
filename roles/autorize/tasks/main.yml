@@ -1,31 +1,33 @@
 ---
 - name: Download bapp
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ bapp_link }}"
     dest: "{{ bapp_file }}"
+    mode: "0755"
 
 - name: Create directory for bapp
-  file:
+  ansible.builtin.file:
     path: "{{ unzip_dir }}"
     state: directory
+    mode: "0755"
 
 - name: Unarchive bapp
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ bapp_file }}"
     dest: "{{ unzip_dir }}"
 
 - name: Clean up bapp
-  file:
+  ansible.builtin.file:
     state: absent
     path: "{{ bapp_file }}"
 
 - name: Find path to python file
-  find:
+  ansible.builtin.find:
     paths: "{{ unzip_dir }}"
     patterns: "*.py"
     recurse: "yes"
     file_type: "file"
   register: path
 
-# Create fact so that this can be referenced later
-- set_fact: autorize_path="{{ path.files.0.path }}"
+- name: Create fact to reference path in other roles
+  ansible.builtin.set_fact: autorize_path="{{ path.files.0.path }}"

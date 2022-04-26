@@ -1,33 +1,38 @@
 ---
 - name: Create extensions directory
-  file:
+  ansible.builtin.file:
     path: "{{ extension_dir }}"
     state: directory
+    mode: "0755"
 
 - name: Create dependencies directory
-  file:
+  ansible.builtin.file:
     path: "{{ dep_dir }}"
     state: directory
+    mode: "0755"
 
 - name: Get jython standalone jar
-  get_url:
+  ansible.builtin.get_url:
     url: "http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/{{ jython_version }}/jython-standalone-{{ jython_version }}.jar"
     dest: "{{ dep_dir }}/jython-standalone-{{ jython_version }}.jar"
+    mode: "0755"
 
 - name: Move update script into place
-  template:
+  ansible.builtin.template:
     src: "{{ ansible_workspace }}/templates/update.sh.tmpl"
     dest: "{{ extension_dir }}/update.sh"
+    mode: "0755"
 
 - name: Create logs directory
-  file:
+  ansible.builtin.file:
     path: "{{ log_path }}"
     state: directory
+    mode: "0755"
 
 - name: Keep burp extensions up-to-date
-  cron:
-   name: "Wipe and reload the burp_extensions directory at 16:00 every day"
-   minute: '0'
-   hour: "16"
-   job: "bash {{ extension_dir }}/update.sh >> {{ log_path }}/{{ log_file_name }}"
+  ansible.builtin.cron:
+    name: "Wipe and reload the burp_extensions directory at 16:00 every day"
+    minute: "0"
+    hour: "16"
+    job: "bash {{ extension_dir }}/update.sh >> {{ log_path }}/{{ log_file_name }}"
   when: destroy_rebuild
